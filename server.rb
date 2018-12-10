@@ -1,4 +1,6 @@
 require 'sinatra'
+require 'sinatra/reloader'
+
 require 'pry'
 require 'csv'
 require_relative 'app/restaurant.rb'
