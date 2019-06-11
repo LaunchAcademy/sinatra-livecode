@@ -1,0 +1,6 @@
+- introduce app, index page with button to new
+- basic routing
+- Restaurant class
+- interacting with the CSV with readline
+- exploration with CSV.foreach
+- adding to a CSV with .open (a)
