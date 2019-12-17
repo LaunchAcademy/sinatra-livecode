@@ -1,4 +1,10 @@
-<h1>Restaurant Name Goes Here</h1>
+<h1><%= @restaurant.name %></h1>
+
+<h3><%= @restaurant.address %></h3>
+<h3><%= @restaurant.description %></h3>
+<p><%= @restaurant.url %></p>
+
+<img src="<%= @restaurant.image %>" alt="">
 
 <a class="back" href="/">Back to All Brunch Spots</a>
 <br/>

@@ -1,3 +1,13 @@
 <h1>Boston's Best Brunch</h1>
 
+<ul>
+  <% @restaurant_objects.each do |restaurant| %>
+    <li>
+      <a href="/restaurants/<%= restaurant.id %>">
+        <%= restaurant.name %>
+      </a>
+    </li>
+  <% end %>
+</ul>
+
 <h4 class="new"><a href="/restaurants/new">Add a New Brunch Spot</a></h4>
