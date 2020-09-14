@@ -1,5 +1,15 @@
-<h1>Restaurant Name Goes Here</h1>
+<h1> <%= @restaurant["name"] %></h1>
 
-<a class="back" href="/">Back to All Brunch Spots</a>
-<br/>
-<a class="back" href="/restaurants/new">Add a New Brunch Spot</a>
+<div>
+  <%= @restaurant["description"] %>
+</div>
+
+<div>
+  <%= @restaurant["url"] %>
+</div>
+
+<div>
+  <%= @restaurant["address"] %>
+</div>
+
+<a class="back" href="/restaurants">Back to All Brunch Spots</a>

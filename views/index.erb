@@ -1,3 +1,10 @@
-<h1>Boston's Best Brunch</h1>
+<h1>Boston's Best Brunch Spots</h1>
 
-<h4 class="new"><a href="/restaurants/new">Add a New Brunch Spot</a></h4>
+<ul>
+  <% @restaurants.each do |restaurant_hash| %>
+    <li>
+       <a href="/restaurants/<%= restaurant_hash["id"]%>"> <%= restaurant_hash["name"] %> </a>
+    </li>
+  <% end %>
+</ul>
+
